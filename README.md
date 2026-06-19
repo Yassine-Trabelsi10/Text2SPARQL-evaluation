@@ -208,27 +208,62 @@ openai/gpt-oss-120b
 
 ```text
 .
-├── data/
-│   ├── SPINACH dataset
-│   └── processed datasets
+├── Inputs
+│   ├── gpt-5-mini.all.evaluation.json
+│   └── test.jsonl
 │
-├── scripts/
-│   ├── property extraction
-│   ├── impact computation
-│   ├── SPARQL pattern analysis
-│   ├── statistics generation
-│   └── visualization scripts
+├── Scripts_and_outputs
+│   ├── 01_spinach_ground_truth_with_properties.py
+│   ├── 02_spinach_ground_truth_and_prediction_with_properties.py
+│   ├── 03_spinach_property_evaluation.py
+│   ├── 04_spinach_property_evaluation_with_labels.py
+│   ├── spinach_ground_truth_with_properties.csv
+│   ├── spinach_ground_truth_and_prediction_with_properties.csv
+│   ├── spinach_property_evaluation.csv
+│   └── spinach_property_evaluation_with_labels.csv
 │
-├── outputs/
-│   ├── CSV files
-│   ├── Excel reports
-│   ├── PNG figures
-│   └── impact graphs
+├── full_dataset_evaluation
+│   ├── operation_patterns.py
+│   ├── avg_path_length.py
+│   ├── zero.py
+│   ├── zero_few_reasoning.py
+│   ├── spinach_property_evaluation_with_semantic.csv
+│   ├── sparql_operation_summary.xlsx
+│   ├── sparql_operation_pattern_comparison.png
+│   ├── top_operation_differences.png
+│   └── Summary_operation_pattern.png
 │
-├── report/
-│   └── Semester Project Report
+├── property_impact_on_score_and_f1
+│   ├── property_impact_on_f1_score.py
+│   ├── property_impact_exec_and_f1.xlsx
+│   └── property_impact_exec_and_f1.png
 │
-└── README.md
+├── statistics_for_4_evaluation_cases
+│   ├── evaluation case analysis
+│   ├── representative examples
+│   ├── distribution statistics
+│   └── visualization outputs
+│
+├── Charts
+│   ├── barchart_score_distribution.py
+│   ├── barchart_score_distribution.png
+│   ├── extra_missing_properties.py
+│   └── extra_missing_properties.png
+│
+├── Get_ALL_wikidata_properties_labels
+│   ├── Get_all_wikidata_properties.py
+│   └── ALL_wikidata_properties_labels.csv
+│
+├── LLM
+│   ├── zero_shot.xlsx
+│   ├── zero_few_shot.xlsx
+│   ├── task6.xlsx
+│   ├── zero_fixed_tokens_json_output.py
+│   ├── few_fixed_tokens_json_output.py
+│   └── zero_few_shot_with_reasoning_tokens_fixed.xlsx
+│
+├── Workflow.pdf
+├── README.md
 ```
 
 ---
